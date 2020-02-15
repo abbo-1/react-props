@@ -2,7 +2,7 @@
 const App = (props) => {
     let { circles } = props;
 
-    console.log(props)
+    console.log(props);
 
     // const myStyle = {
     //     width: circles[0].radius * 2, 
@@ -18,15 +18,21 @@ const App = (props) => {
         backgroundColor: circles.color
     }
 
-    superCircles = <div style={myStyle} />
+    console.log("butternut squash" + myStyle)
+
+     const superCircles = <div style={myStyle} />
+
 
     const circleGathering = []
-        for (var i=0; i<12; i++) {
+        for (var i=0; i<15; i++) {
             circleGathering.push(<superCircles key={i} />)
         }
-
+    console.log(superCircles + "these are super circles");
+    console.log(circleGathering + "there once was a man from nantucket")
     return (
-        <div {...circleGathering} />
+        <div>
+            {superCircles}
+        </div>
     )
 }
 
